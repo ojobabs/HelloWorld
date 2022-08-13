@@ -40,8 +40,8 @@ steps:
     publishLocation: 'Container'
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Visual Studio Enterprise Subscription(f588cadf-3185-42ac-9dea-31c00f4fc9b3)'
+    azureSubscription: 'Azure Pass - Sponsorship(93db6c74-26a2-4906-aee3-ce562d4d265e)'
     appType: 'webApp'
-    appName: 'task-1'
+    appName: 'task-one'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
