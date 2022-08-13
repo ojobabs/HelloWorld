@@ -31,7 +31,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
+    ArtifactName: 'HelloWord'
     publishLocation: 'Container'
 - task: AzureRmWebAppDeployment@4
   inputs:
@@ -39,4 +39,4 @@ steps:
     azureSubscription: 'Visual Studio Enterprise Subscription(f588cadf-3185-42ac-9dea-31c00f4fc9b3)'
     appType: 'webApp'
     WebAppName: 'task-1'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/HelloWorld.zip'
