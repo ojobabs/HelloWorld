@@ -43,5 +43,8 @@ steps:
     azureSubscription: 'Azure Pass - Sponsorship(93db6c74-26a2-4906-aee3-ce562d4d265e)'
     appType: 'webApp'
     appName: 'task-one'
+    deployToSlotOrASE: true
+    resourceGroupName: 'azureDev'
+    slotName: 'production'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
